@@ -1,9 +1,13 @@
 import express from "express";
 import mongoose from "mongoose";
+import cors from "cors";
+
 
 
 const app = express();
 const port = 3000;
+
+app.use(cors());
 
 mongoose.connect('mongodb+srv://naveenpandianp2:Naveen%4029@cluster0.bul8bxu.mongodb.net/portfolio_data?retryWrites=true&w=majority&appName=Cluster0')
 .then(()=>{
