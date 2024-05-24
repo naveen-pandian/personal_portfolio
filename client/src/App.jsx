@@ -4,7 +4,7 @@ import Home from './pages/Home';
 
 function App() {
     return (
-        <Router basename='/personal_portfolio/client'>
+        <Router basename="/personal_portfolio/client">
         <Routes>
             <Route path="/" element={<Home />} />
             {/* <Route path="/:user" element={<Home />} /> */}
